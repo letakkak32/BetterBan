@@ -3,9 +3,10 @@ package letakkak32.betterban;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class PlMain extends JavaPlugin {
+public final class PlMain extends JavaPlugin { //testing version please bulid this repository!
 
     @Override
     public void onEnable() {
@@ -25,7 +26,15 @@ public final class PlMain extends JavaPlugin {
             {
                 if(sender.isOp())
                 {
-
+                    if(args.length == 1)
+                    {
+                        Player target = Bukkit.getPlayer(args[0]);
+                        if(target != null)
+                        {
+                            String targetsIp = String.valueOf(target.getAddress());
+                            //이제야 밴할 수 있는 관문을 통과함! 나이스하다
+                        }
+                    }
                 }
             }
         }
