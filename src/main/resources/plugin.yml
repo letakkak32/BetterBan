@@ -1,0 +1,4 @@
+name: Betterban
+version: '${project.version}'
+main: letakkak32.betterban.PlMain
+api-version: 1.19
